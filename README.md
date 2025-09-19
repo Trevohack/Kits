@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://i.postimg.cc/XJ0Hq2fr/wallhaven-x6ry2v.jpg" alt="banner" style="max-width:100%; border-radius:12px;"/>
+  <img src="https://i.postimg.cc/LXLzY29S/wallhaven-7py85y.jpg" alt="banner" style="max-width:100%; border-radius:12px;"/> 
 </div>
 
 <h1 align="center">Kits</h1>
 
 <div align="center">
   <strong>A list of kits for everyone.</strong><br>
-  Now on <b><i>Linux</i></b>
+  Now on <b><i>Linux</i></b> 
 </div>
 
 ---
