@@ -1,4 +1,4 @@
-obj-m := trev_kit.o 
+obj-m := kit.o 
 CC = gcc -Wall 
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
