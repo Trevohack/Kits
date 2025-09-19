@@ -2,7 +2,7 @@
   <img src="https://i.postimg.cc/XJ0Hq2fr/wallhaven-x6ry2v.jpg" alt="banner" style="max-width:100%; border-radius:12px;"/>
 </div>
 
-# <h1 align="center">Kits</h1>
+<h1 align="center">Kits</h1>
 
 <div align="center">
   <strong>A list of kits for everyone.</strong><br>
@@ -11,9 +11,8 @@
 
 ---
 
-<span style="color:#ff5f6d; font-weight:700;">**⚠️ Legal & Ethical Notice**</span>
-
-This repository is **educational-only**. It describes *concepts* and *historic categories* of kernel/userland malware so defenders can **recognize, study, and detect** them. It **does not** provide operational code, exploitation recipes, nor step‑by‑step instructions to build or deploy malicious software. Use this content only in legal, controlled environments (isolated VMs, CTF labs you own, or explicit instructor-approved training setups).
+> [!Important] 
+> This repository is **educational-only**. It describes *concepts* and *historic categories* of kernel/userland malware so defenders can **recognize, study, and detect** them. It **does not** provide operational code, exploitation recipes, nor step‑by‑step instructions to build or deploy malicious software. Use this content only in legal, controlled environments (isolated VMs, CTF labs you own, or explicit instructor-approved training setups).
 
 --- 
 
