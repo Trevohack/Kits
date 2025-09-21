@@ -1,4 +1,3 @@
-
 This shared object (.so) runs automatically when loaded. It creates a reverse shell to a specified IP and port, 
 It redirects standard input, output, and error to the remote socket. It loads /bin/sh into memory using memfd_create() and executes it entirely from RAM with fexecve(). This method leaves no trace on disk and runs quietly in memory. 
 
