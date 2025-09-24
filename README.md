@@ -6,7 +6,7 @@
 
 <div align="center">
   <strong>A list of kits for everyone.</strong><br>
-  Now on <b><i>Linux</i></b> 
+  Now on <b><i>Linux</i></b> and <b><i>Windows</i></b>  
 </div>
 
 ---
