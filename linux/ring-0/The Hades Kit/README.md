@@ -1,5 +1,15 @@
 
-# Hades - Blue Team Defensive Rootkit
+<div align="center">
+  <img src="https://i.postimg.cc/c4Bb0bn5/wallhaven-rdrlkm.png" alt="banner" style="max-width:80%; border-radius:15px;"/> 
+</div>
+
+<h1 align="center">The Hades Kit</h1>
+
+<div align="center">
+  <strong>A Defensive Module</strong><br>
+</div>
+
+--- 
 
 A kernel-level defensive module designed for blue team operations to protect sensitive files and network services from reconnaissance attacks. Hades operates at ring 0 to provide robust protection against sophisticated attackers attempting to enumerate system resources.
 
