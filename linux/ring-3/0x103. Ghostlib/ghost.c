@@ -1,3 +1,10 @@
+
+/* 
+
+Author: Devil0x1
+
+*/
+
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
