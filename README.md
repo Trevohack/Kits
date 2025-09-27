@@ -56,13 +56,6 @@
 
 ---
 
-## 📚 Recommended study plan (beginner → advanced)
-
-1. Linux fundamentals (processes, permissions, modules)
-2. Userland monitoring: `inotify`, `auditd`, `strace`
-3. Tracing: `ftrace`, `perf`, `bpftrace` (produce read-only observers)
-4. Build detection tooling (userland) that correlates events, raise alerts
-5. Responsible disclosure and red-team/blue-team exercises in approved labs
 
 ---
 
