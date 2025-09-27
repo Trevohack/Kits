@@ -67,7 +67,7 @@ Syscall Hooks:
 ## Prerequisites
 
 ### System Requirements
-- Linux kernel 4.15+ (tested on 4.15.0-91-generic)
+- Linux kernel 5.x+ 
 - x86_64 architecture
 - Root privileges for module loading
 - Kernel headers for compilation
@@ -77,10 +77,6 @@ Syscall Hooks:
 # Ubuntu/Debian
 sudo apt update
 sudo apt install build-essential linux-headers-$(uname -r)
-
-# CentOS/RHEL/Fedora  
-sudo yum groupinstall "Development Tools"
-sudo yum install kernel-devel kernel-headers
 ```
 
 ### Required Files
@@ -259,77 +255,5 @@ else
 fi
 ```
 
-## Security Considerations
 
-### Legitimate Use Cases
-- **Incident response**: Protecting evidence and analysis tools
-- **Digital forensics**: Concealing investigation activities
-- **Red team exercises**: Simulating advanced persistent threats
-- **Security research**: Testing detection capabilities
-- **Sensitive operations**: Protecting classified information systems
 
-### Limitations & Bypass Methods
-- **Direct syscalls**: Advanced attackers may use direct system calls
-- **Memory forensics**: In-memory analysis can detect hooks
-- **Kernel debugging**: Kernel debuggers can identify modifications  
-- **Static analysis**: Offline disk analysis bypasses runtime hiding
-- **Root detection**: Rootkit scanners may detect ftrace modifications
-
-### Countermeasures Against Bypasses
-- **Kernel module signing**: Use signed modules in production
-- **KASLR**: Enable Kernel Address Space Layout Randomization
-- **SMEP/SMAP**: Utilize hardware security features
-- **Control Flow Integrity**: Enable CFI if available
-- **Regular updates**: Keep module updated for new kernel versions
-
-## Troubleshooting
-
-### Common Issues
-
-#### Module Won't Load
-```bash
-# Check kernel version compatibility
-uname -r
-cat /proc/version
-
-# Verify kernel headers
-ls -la /lib/modules/$(uname -r)/build
-
-# Check compilation errors
-make clean && make 2>&1 | tee compile.log
-```
-
-#### Files Still Visible  
-```bash
-# Verify module loaded correctly
-lsmod | grep hades
-dmesg | grep -i error
-
-# Check file naming matches prefixes exactly
-ls -la /tmp/source-code*  # Should be hidden
-ls -la /tmp/Source-Code*  # Different case - visible
-```
-
-#### Network Connections Showing
-```bash
-# Confirm service running on correct port
-sudo lsof -i :8443
-sudo ss -tulpn | grep 8443
-
-# Test different enumeration tools
-netstat -an | grep 8443
-nmap -p 8443 localhost
-```
-
-#### System Instability
-```bash
-# Safe module removal
-sudo rmmod hades
-
-# Check system logs
-sudo journalctl -n 50
-dmesg | tail -20
-
-# System recovery
-sudo reboot  # If needed
-```
